@@ -6,7 +6,7 @@ import org.junit.Test;
 import ru.praktikum.diplom_3.config.Config;
 import ru.praktikum.diplom_3.page.MainPage;
 
-public class TransitionsBetweenPageObjectsTest extends AbstractUITest{
+public class TransitionsBetweenPageObjectsTest extends AbstractUITest {
     private static MainPage mainPage;
 
     @Test

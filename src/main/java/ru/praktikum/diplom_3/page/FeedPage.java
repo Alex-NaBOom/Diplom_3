@@ -10,6 +10,7 @@ public class FeedPage extends AbstractPage {
     }
 
     private By personalAccountLink = By.xpath("//p[text()='Личный Кабинет']");
+
     @Step("Open user profile")
     public void personalAccountLinkClick() {
         webDriver.findElement(personalAccountLink).click();

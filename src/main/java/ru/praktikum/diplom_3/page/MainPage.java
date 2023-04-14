@@ -4,7 +4,7 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class MainPage extends AbstractPage{
+public class MainPage extends AbstractPage {
 
     public MainPage(WebDriver webDriver) {
         super(webDriver);
@@ -23,34 +23,42 @@ public class MainPage extends AbstractPage{
     public void open() {
         webDriver.get("https://stellarburgers.nomoreparties.site");
     }
+
     @Step("Open user profile")
     public void personalAccountLinkClick() {
         webDriver.findElement(personalAccountLink).click();
     }
+
     @Step("Click sign in")
     public void signInBtnClick() {
         webDriver.findElement(signInBtn).click();
     }
+
     @Step("Get class value for buns")
     public String getBunClass() {
         return webDriver.findElement(bunsSection).getAttribute("class");
     }
+
     @Step("Open all buns")
     public void bunsSectionClick() {
         webDriver.findElement(bunsSpan).click();
     }
+
     @Step("Get class value for sauces")
     public String getSaucesClass() {
         return webDriver.findElement(saucesSection).getAttribute("class");
     }
+
     @Step("Open all sauces")
     public void saucesSectionClick() {
         webDriver.findElement(saucesSpan).click();
     }
+
     @Step("Get class value for fillings")
     public String getFillingsClass() {
         return webDriver.findElement(fillingsSection).getAttribute("class");
     }
+
     @Step("Open all fillings")
     public void fillingsSectionClick() {
         webDriver.findElement(fillingsSpan).click();

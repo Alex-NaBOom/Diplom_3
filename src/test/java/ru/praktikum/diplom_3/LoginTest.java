@@ -11,7 +11,7 @@ import ru.praktikum.diplom_3.page.MainPage;
 import ru.praktikum.diplom_3.page.RegistrationPage;
 
 
-public class LoginTest extends AbstractUITest{
+public class LoginTest extends AbstractUITest {
     private static MainPage mainPage;
     private static LoginPage loginPage;
     private static RegistrationPage registrationPage;
@@ -32,7 +32,7 @@ public class LoginTest extends AbstractUITest{
         loginPage.signInBtnClick();
         String expected = "https://stellarburgers.nomoreparties.site/";
         Helper.waitTillPageIsLoaded(webDriver, expected);
-        Assert.assertEquals("site page should be visible", expected, webDriver.getCurrentUrl()); // TODO
+        Assert.assertEquals("site page should be visible", expected, webDriver.getCurrentUrl());
     }
 
     @Test

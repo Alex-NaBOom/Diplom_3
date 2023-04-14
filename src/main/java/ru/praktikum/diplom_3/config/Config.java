@@ -12,5 +12,10 @@ public class Config {
     public static String getPassword() {
         return PASSWORD;
     }
-    public static String getActiveSection() {return ACTIVE_SECTION; };
+
+    public static String getActiveSection() {
+        return ACTIVE_SECTION;
+    }
+
+    ;
 }
