@@ -43,6 +43,6 @@ public class RegistrationTest extends AbstractUITest {
         registrationPage.passwordInputSendKeys(RandomStringUtils.randomAlphabetic(5));
         registrationPage.registrationBtnClick();
         registrationPage.waitWarningVisibility();
-        Assert.assertTrue("Предупреждение должно быть видимым", true);
+        Assert.assertTrue("Предупреждение должно быть видимым", registrationPage.checkWarningVisibility());
     }
 }
